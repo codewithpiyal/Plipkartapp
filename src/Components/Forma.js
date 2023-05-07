@@ -31,18 +31,22 @@ import Form from 'react-bootstrap/Form';
       }
     }
   return (
-    <div>
-        <Form className='mt-5 col-lg-6' onSubmit={handleSubmit}>
+    <div >
+    <h3 className='text-center col-lg-6'>Sign Up</h3>
+        <Form  onSubmit={handleSubmit}>
          <Form.Group className="mb-3 col-lg-6" controlId="formBasicName">
         <Form.Control value={formData.Name} name='Name' type="text" placeholder="Enter Your Name" onChange={handleChange} />
       </Form.Group>
       <Form.Group className="mb-3 col-lg-6" controlId="formBasicEmail">
         <Form.Control value={formData.Email} name='Email' type="email" placeholder="Enter email" onChange={handleChange} />
       </Form.Group>
+      <Form.Group className="mb-3 col-lg-6" controlId="formBasicDate">
+       <Form.Control value={formData.Date} type="Date"  onChange={handleChange} />
+      </Form.Group>
       <Form.Group className="mb-3 col-lg-6" controlId="formBasicPassword">
        <Form.Control value={formData.Password} name='Password' type="password" placeholder="Password" onChange={handleChange} />
       </Form.Group>
-      <Button  className="mb-3 col-lg-6" variant="primary" type="submit">
+      <Button  className="col-lg-6" variant="primary" type="submit">
         Submit
       </Button>
     </Form>

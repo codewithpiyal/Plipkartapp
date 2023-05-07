@@ -16,7 +16,7 @@ function Header() {
                             <MenuIcon />
                         </IconButton>
                         <Typography variant="h6" ml={65} color="inherit" component="div">
-                            TODOAPP
+                            PLIPKART
                         </Typography>
                     </Toolbar>
                 </AppBar>
